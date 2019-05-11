@@ -1,0 +1,17 @@
+<p>
+  {{ formatted }}
+</p>
+
+<div>
+  <span>Locales: </span>
+  <button *ngFor="let locale of locales" (click)="currentLocale = locale" [disabled]="locale == currentLocale">
+    {{ locale }}
+  </button>
+</div>
+
+<div>
+  <span>Formats: </span>
+  <button *ngFor="let format of formats" (click)="currentFormat = format" [disabled]="format == currentFormat">
+    {{ format }}
+  </button>
+</div>
