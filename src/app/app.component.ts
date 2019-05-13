@@ -13,7 +13,7 @@ dayjs.extend(LocalizedFormat)
 })
 export class AppComponent  {
   locales = ['en', 'nl', 'fr'];
-  formats = ['L', 'LLLL', 'LLL', 'llll'];
+  formats = ['L', 'LL', 'LLL', 'LLLL', 'llll'];
   currentLocale = 'en';
   currentFormat = 'L';
 
